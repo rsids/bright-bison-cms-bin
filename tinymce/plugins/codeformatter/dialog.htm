@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#codeformatter_dlg.title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	<link href="css/prettify.css" rel="stylesheet"  media="screen" />
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		pre {
+			
+		}
+		pre {
+			position: absolute;
+			display: block;
+			top: 30px;
+			bottom: 50px;
+			width: 100%;
+			overflow: auto;
+		}
+		
+		.mceActionPanel {
+			position: absolute;
+			bottom:0;
+		}
+	</style>
+</head>
+<body>
+
+<form onsubmit="CodeFormatter.insert();return false;" action="#">
+	<p>Paste the code here:</p>
+	<pre contenteditable id="srccode-pre"></pre>
+	<div class="mceActionPanel">
+		<input type="button" id="insert" name="insert" value="{#insert}" onclick="CodeFormatterDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+
+</body>
+</html>

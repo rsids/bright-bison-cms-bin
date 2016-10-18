@@ -1,0 +1,101 @@
+html, body {
+	margin: 			0px;
+	overflow:			hidden;
+	width: 				100%;
+	height: 			100%;
+	background-color:	#50799b;
+	font-family:		Helvetica, Arial, sans;
+	color:				#465161;
+}
+
+#bright_cms {
+	width: 				100%;
+	height: 			100%;
+	position:			fixed;
+}
+
+.panel {
+	width: 411px;
+	height: 172px;
+	margin: 200px auto;
+	background: #e9e9e9;
+	padding: 16px 16px;
+	border: 1px solid #929292;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	background-image: linear-gradient(bottom, rgb(194,194,194) 45%, rgb(234,234,234) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(194,194,194) 45%, rgb(234,234,234) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(194,194,194) 45%, rgb(234,234,234) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(194,194,194) 45%, rgb(234,234,234) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(194,194,194) 45%, rgb(234,234,234) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.45, rgb(194,194,194)),
+		color-stop(1, rgb(234,234,234))
+	);
+}
+label {
+	display: block;
+	padding-top: 6px;
+}
+img {
+	width: 117px;
+	height: 117px;
+	float: left;
+}
+#formdiv {
+	float: right;
+	width: 270px;
+}
+
+input {
+	height: 30px;
+	border: 1px solid #b7b7b7;
+	padding-left: 5px;
+	width: 268px;
+}
+
+input[type="submit"] {
+	width: 66px;
+	float: right;
+	font-weight: bold;
+	font-size: 12pt;
+	color: #565866;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	background-image: linear-gradient(bottom, rgb(202,202,202) 13%, rgb(247,247,247) 94%);
+	background-image: -o-linear-gradient(bottom, rgb(202,202,202) 13%, rgb(247,247,247) 94%);
+	background-image: -moz-linear-gradient(bottom, rgb(202,202,202) 13%, rgb(247,247,247) 94%);
+	background-image: -webkit-linear-gradient(bottom, rgb(202,202,202) 13%, rgb(247,247,247) 94%);
+	background-image: -ms-linear-gradient(bottom, rgb(202,202,202) 13%, rgb(247,247,247) 94%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.13, rgb(202,202,202)),
+		color-stop(0.94, rgb(247,247,247))
+	);
+}
+
+hr {
+	color: #eeeeee;
+	background-color: #eeeeee;
+	border-color: #eeeeee;
+}
+
+.clear {
+	clear: both;
+}
+
+.error {
+	color: red;
+	font-style: italic;
+}
