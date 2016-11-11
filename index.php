@@ -75,7 +75,7 @@
 		<h1>Flash Player not found</h1>
 
 		<p>To run Bright CMS, Adobe Flash Player 10.1.0 is required, you can download it here:<br/>
-		<a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		<a href="http://www.adobe.com/go/getflashplayer">Download flash</a></p>
 	</div>
 </body>
 <?php } else {?>
