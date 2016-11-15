@@ -6,9 +6,10 @@ if (!file_exists(dirname(__FILE__) . '/../site/config/Constants.php')) {
 }
 include_once(dirname(__FILE__) . '/../library/Bright/Bright.php');
 
-$http = isset($_SERVER['https']) && $_SERVER['https'] ? 'https://' : 'http://';
+$http = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] ? 'https://' : 'http://';
+
 // Make sure the given url is the same as the BASEURL
-if (BASEURL != $http . $_SERVER['HTTP_HOST'] . '/') {
+if (BASEURL !== $http . $_SERVER['HTTP_HOST'] . '/') {
     header('Location: ' . BASEURL . 'bright/cms/');
     exit;
 }
