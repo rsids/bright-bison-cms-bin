@@ -86,7 +86,7 @@
     if($status -> result === 'OK' && class_exists('FileHook')) {
         $ph = new FileHook();
         if(method_exists($ph, 'uploadFile')) {
-            $ph->uploadFile($remotename, $path);
+            $ph->uploadFile($remotedir, $path);
         }
     }
 
