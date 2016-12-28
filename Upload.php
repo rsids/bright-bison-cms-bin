@@ -75,7 +75,6 @@
 			$path_parts 	= pathinfo($path . $remotename);
 			$path_ext		= strtolower($path_parts['extension']);
 
-
 		}
 	} else {
 		$status -> result = 'ERROR';
